@@ -279,7 +279,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
 }
 
 .zodiac-item.highlight .logo{
-  transform: scale(3.75);
+  transform: scale(3.5);
 }
 
 
@@ -292,6 +292,8 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
   left: 0;
   width: 100%;
   overflow: hidden;
+  color: #C2B49C;
+  text-shadow: 2px 2px 3px #000;
 }
 
 .cocktail-name span{
@@ -327,6 +329,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
   transition: opacity 0.5s;
   margin-top: 1rem;
   font-size: 24px;
+  color: #C2B49C
 }
 
 .price.show{
@@ -359,7 +362,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
 }
 
 .hotel-logo img{
-  width: 250px;
+  width: 200px;
   margin:0 auto;
 }
 
