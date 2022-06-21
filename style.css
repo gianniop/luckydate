@@ -266,10 +266,19 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
   z-index: 2;
   opacity: 1;
   transition: opacity 0.5s;
+  animation-name: spin-grow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 
 .spin-btn.hide{
   opacity: 0;
+}
+
+@keyframes spin-grow {
+  0%   {width: 100px; height: 100px;}
+  50%  {width: 110px; height: 110px;}
+  100% {width: 100px; height: 100px;}
 }
 
 .zodiac-item .logo{
