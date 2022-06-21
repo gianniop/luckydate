@@ -279,16 +279,16 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
 }
 
 .zodiac-item.highlight .logo{
-  transform: scale(4);
+  transform: scale(3.75);
 }
 
 
 .cocktail-name{
   color: #fff;
-  font-size: 3rem;
+  font-size: 2.875rem;
   text-align: center;
   position: absolute;
-  top: 5rem;
+  top: 3.5rem;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -310,7 +310,7 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
   transition: opacity 0.5s;
   color: #fff;
   position: absolute;
-  top: 50%;
+  top: 45%;
   padding: 1rem 2rem;
   font-size: 20px;
   text-align: center;
@@ -336,18 +336,37 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
 .intro-text{
   position: absolute;
   left: 0;
-  top: 2rem;
+  top: 1rem;
   width: 100%;
-  font-size: 2.5rem;
+  font-size: 2.125rem;
   font-style: italic;
   color: #fff;
   text-align: center;
 }
 
+
+.hotel-logo{
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 75%;
+  width: 100%;
+  transition: opacity 0.5s;
+}
+
+.hotel-logo.show{
+  opacity: 1;
+}
+
+.hotel-logo img{
+  width: 250px;
+  margin:0 auto;
+}
+
 @media screen and (max-width:375px){
   .cocktail-name{
     font-size: 2.5rem;
-    top: 4.25rem;
+    top: 4rem;
   }
   .intro-text{
     font-size: 1.75rem;

@@ -66,8 +66,7 @@ const cocktailName = document.querySelector(".cocktail-name span");
 const price = document.querySelector(".price");
 const cocktailDetails = document.querySelector(".cocktail-details");
 const cocktailList = document.querySelector(".cocktail-list");
-
-console.log(zodiacs);
+const logo = document.querySelector(".hotel-logo");
 
 zodiacs.forEach((item, index) => {
   item.src =  cocktails[index].sign;
@@ -86,6 +85,7 @@ function spinActions(){
   setTimeout(showName, 4500);
   setTimeout(showList, 5500);
   setTimeout(showPrice, 6500);
+  setTimeout(showLogo, 7000);
 }
 
 const zodiacItems = document.querySelectorAll(".zodiac-item");
@@ -127,4 +127,7 @@ function showList(){
 }
 function showPrice(){
   price.classList.add("show");
+}
+function showLogo(){
+  logo.classList.add("show");
 }
