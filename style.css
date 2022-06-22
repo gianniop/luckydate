@@ -317,22 +317,25 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
   transform: translateY(0);
 }
 
-
 .cocktail-details{
   opacity: 0;
   transition: opacity 0.5s;
   color: #fff;
   position: absolute;
   top: 45%;
-  padding: 1rem 2rem;
   font-size: 20px;
   text-align: center;
   width: 100%;
-  background-color: rgba(0,0,0,0.3);
 }
 
 .cocktail-details.show{
   opacity : 1;
+}
+
+.details-inner{
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  padding: 1rem 2rem 0.5rem;
 }
 
 .price{
@@ -361,9 +364,6 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
 
 .hotel-logo{
   opacity: 0;
-  position: absolute;
-  left: 0;
-  top: 75%;
   width: 100%;
   transition: opacity 0.5s;
 }
@@ -377,13 +377,20 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
   margin:0 auto;
 }
 
-@media screen and (max-width:375px){
+@media screen and (max-width:385px){
   .cocktail-name{
     font-size: 2.5rem;
     top: 4rem;
   }
   .intro-text{
     font-size: 1.75rem;
+  }
+  .cocktail-details{
+    font-size: 17px;
+  }
+  .price{
+    font-size: 22px;
+    margin-top: 0.75rem;
   }
 }
 @media screen and (max-width:350px){
@@ -394,4 +401,10 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
   .zodiac-item .logo{
     width: 30px;
   }
+}
+
+@media screen and (max-height:700px){
+  .cocktail-name {
+    top: 3rem;
+}
 }
