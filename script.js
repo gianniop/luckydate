@@ -114,7 +114,7 @@ function showdetails(){
     li.innerHTML = ing;
     cocktailList.appendChild(li);
   });
-  price.innerHTML = "Τιμή : " + cocktails[arrIndex].price;
+  price.innerHTML = "Τιμή : " + cocktails[arrIndex].price + "	&#8364;";
 }
 
 function showName(){

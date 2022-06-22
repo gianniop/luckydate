@@ -392,6 +392,9 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
     font-size: 22px;
     margin-top: 0.75rem;
   }
+  .details-inner{
+    padding: 0.5rem 1rem;
+  }
 }
 @media screen and (max-width:350px){
   .zodiac-circle{
@@ -406,5 +409,5 @@ body, div, h1, h2, h3, h4, h5, h6, p, ol, ul, blockquote, figure{
 @media screen and (max-height:700px){
   .cocktail-name {
     top: 3rem;
-}
+  }
 }
